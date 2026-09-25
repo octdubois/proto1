@@ -1,0 +1,49 @@
+{
+  "version": "1.0",
+  "occasions": [
+    {"id": "occ_halloween", "display_name": "Halloween", "tags": ["autumn", "spooky"], "complexity": 1},
+    {"id": "occ_christmas", "display_name": "Christmas", "tags": ["winter", "festive"], "complexity": 1},
+    {"id": "occ_general", "display_name": "General", "tags": ["everyday"], "complexity": 1}
+  ],
+  "themes": [
+    {"id": "thm_spooky", "display_name": "Spooky", "tags": ["scary"], "complexity": 2},
+    {"id": "thm_cute", "display_name": "Cute", "tags": ["kawaii", "adorable"], "complexity": 1},
+    {"id": "thm_tech", "display_name": "Technology", "tags": ["future", "gadgets"], "complexity": 3}
+  ],
+  "subjects": [
+    {"id": "sub_black_cat", "display_name": "Black Cat", "tags": ["animal", "pet"], "complexity": 1},
+    {"id": "sub_robot", "display_name": "Robot", "tags": ["machine", "future"], "complexity": 3},
+    {"id": "sub_coffee", "display_name": "Coffee Cup", "tags": ["food", "drink"], "complexity": 1},
+    {"id": "sub_penguin", "display_name": "Penguin", "tags": ["animal", "cold"], "complexity": 2}
+  ],
+  "actions": [
+    {"id": "act_drinking", "display_name": "Drinking", "tags": ["consume"], "complexity": 2},
+    {"id": "act_flying", "display_name": "Flying", "tags": ["movement"], "complexity": 3},
+    {"id": "act_sitting", "display_name": "Sitting", "tags": ["static"], "complexity": 1}
+  ],
+  "moods": [
+    {"id": "mod_dark", "display_name": "Dark", "tags": ["moody"], "complexity": 1},
+    {"id": "mod_happy", "display_name": "Happy", "tags": ["joyful"], "complexity": 1},
+    {"id": "mod_mysterious", "display_name": "Mysterious", "tags": ["enigmatic"], "complexity": 2}
+  ],
+  "art_styles": [
+    {"id": "sty_gothic", "display_name": "Gothic", "tags": ["dark", "ornate"], "complexity": 4},
+    {"id": "sty_cyberpunk", "display_name": "Cyberpunk", "tags": ["neon", "future"], "complexity": 4},
+    {"id": "sty_vintage", "display_name": "Vintage", "tags": ["retro"], "complexity": 2},
+    {"id": "sty_minimalist", "display_name": "Minimalist", "tags": ["clean", "simple"], "complexity": 1}
+  ],
+  "compositions": [
+    {"id": "cmp_centered", "display_name": "Centered", "tags": ["balanced"], "complexity": 1},
+    {"id": "cmp_dynamic", "display_name": "Dynamic", "tags": ["action"], "complexity": 3}
+  ],
+  "palettes": [
+    {"id": "pal_black_orange", "display_name": "Black & Orange", "tags": ["contrast", "halloween"], "complexity": 1},
+    {"id": "pal_neon", "display_name": "Neon", "tags": ["bright", "cyberpunk"], "complexity": 2},
+    {"id": "pal_pastel", "display_name": "Pastel", "tags": ["soft", "cute"], "complexity": 2}
+  ],
+  "decorations": [
+    {"id": "dec_stars", "display_name": "Stars", "tags": ["sky", "magic"], "complexity": 1},
+    {"id": "dec_skulls", "display_name": "Skulls", "tags": ["spooky", "death"], "complexity": 2},
+    {"id": "dec_gears", "display_name": "Gears", "tags": ["machine", "steampunk"], "complexity": 3}
+  ]
+}

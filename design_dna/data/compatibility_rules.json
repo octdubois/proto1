@@ -1,0 +1,17 @@
+[
+  {"source": "occ_halloween", "target": "sub_black_cat", "score": 1.0},
+  {"source": "occ_halloween", "target": "sub_coffee", "score": 0.55},
+  {"source": "occ_halloween", "target": "sub_robot", "score": 0.35},
+  {"source": "occ_halloween", "target": "sty_gothic", "score": 0.95},
+  {"source": "occ_halloween", "target": "pal_black_orange", "score": 1.0},
+  {"source": "occ_halloween", "target": "sty_vintage", "score": 0.8},
+  {"source": "sub_black_cat", "target": "sty_gothic", "score": 0.95},
+  {"source": "sub_black_cat", "target": "thm_cute", "score": 0.90},
+  {"source": "sub_black_cat", "target": "sty_vintage", "score": 0.85},
+  {"source": "sub_black_cat", "target": "sty_cyberpunk", "score": 0.65},
+  {"source": "sub_robot", "target": "sty_cyberpunk", "score": 1.0},
+  {"source": "sty_cyberpunk", "target": "pal_neon", "score": 1.0},
+  {"source": "sty_cyberpunk", "target": "occ_christmas", "score": 0.4},
+  {"source": "occ_christmas", "target": "sub_penguin", "score": 0.95},
+  {"source": "occ_christmas", "target": "pal_black_orange", "score": 0.1}
+]
