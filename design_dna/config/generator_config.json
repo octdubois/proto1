@@ -1,0 +1,13 @@
+{
+    "default_temperature": 50,
+    "max_generation_attempts": 3,
+    "logging": {
+        "enabled": true,
+        "format": "jsonl"
+    },
+    "duplicate_detection": {
+        "avoid_exact": true,
+        "avoid_near": false,
+        "near_duplicate_threshold": 0.85
+    }
+}
