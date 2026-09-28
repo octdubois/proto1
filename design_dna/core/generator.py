@@ -44,6 +44,8 @@ class DesignGenerator:
             return None
 
         # 1. Pipeline Selection
+        # Bias towards merchandise graphics
+
         occasion = pick("occasions", "occasion")
         theme = pick("themes", "theme")
         primary_subject = pick("subjects", "primary_subject")
@@ -70,18 +72,21 @@ class DesignGenerator:
             if sec_sub and sec_sub != primary_subject and sec_sub not in secondary_subjects:
                 secondary_subjects.append(sec_sub)
 
-        action = pick("actions", "action")
-        environment = pick("environments", "environment")
+        # Actions are less critical for merch graphics, keep them optional
+        action = pick("actions", "action") if randomizer.rng.random() > 0.3 or ("action" in locked_fields) else None
 
-        # Concept Formulation
-        # Make concepts more dynamic based on context and temperature
-        rel_options = ["subject_in_environment", "subject_dominating_environment", "environment_dwarfing_subject"] if environment else ["subject_isolated", "subject_floating", "subject_breaking_frame"]
+        # Environments should be rare for merchandise graphics (e.g. t-shirt designs usually float on transparency)
+        env_chance = 0.15 + (temperature / 100.0 * 0.2) # 15% to 35% chance
+        environment = pick("environments", "environment") if randomizer.rng.random() < env_chance or ("environment" in locked_fields) else None
 
-        hook_options = ["balanced_presentation", "dramatic_lighting", "dynamic_pose"]
+        # Concept Formulation focused on Merchandise Graphics
+        rel_options = ["integrated_graphic_lockup", "subject_with_environmental_framing", "layered_emblem"] if environment else ["spot_illustration", "isolated_motif", "typographic_integration", "floating_graphic"]
+
+        hook_options = ["bold_silhouette", "high_contrast_linework", "balanced_iconography"]
         if temperature > 60:
-            hook_options.extend(["unexpected_scale", "surreal_juxtaposition", "exaggerated_perspective"])
+            hook_options.extend(["distressed_vintage_appeal", "pop_art_juxtaposition", "psychedelic_distortion"])
 
-        narrative_options = ["character_scene", "action_sequence", "moment_before_impact"] if action else ["portrait", "still_life", "heroic_stance", "candid_observation"]
+        narrative_options = ["dynamic_mascot", "action_motif"] if action else ["iconic_emblem", "pattern_element", "statement_graphic", "stylized_insignia"]
 
         concept = ConceptLayer(
             relationship=randomizer.rng.choice(rel_options),
@@ -98,9 +103,44 @@ class DesignGenerator:
             m1 = pick("moods", "mood_1")
             if m1: moods.append(m1)
 
-        art_style = pick("art_styles", "art_style")
+        # Strongly bias towards graphic/illustration styles for merch
+        def style_weight_adj(entity):
+            base_score = self.compat.calculate_aggregate_score(entity.id, selected_ids)
+            if entity.family in ["Graphic Design", "Illustration", "Digital"]:
+                return min(1.0, base_score * 1.5)
+            elif entity.family in ["Traditional", "Modern"]:
+                return max(0.01, base_score * 0.4)
+            return base_score
+
+        if "art_style" in locked_fields and locked_fields["art_style"]:
+            art_style = locked_fields["art_style"]
+            selected_ids.append(art_style)
+        else:
+            style_entities = self.gt.get_entities("art_styles")
+            chosen_style = randomizer.select_weighted(style_entities, style_weight_adj, temperature) if style_entities else None
+            art_style = chosen_style.id if chosen_style else None
+            if art_style: selected_ids.append(art_style)
+
         visual_style = pick("visual_styles", "visual_style")
-        composition = pick("compositions", "composition")
+
+        # Strongly bias towards standalone compositions
+        def comp_weight_adj(entity):
+            base_score = self.compat.calculate_aggregate_score(entity.id, selected_ids)
+            if entity.name in ["Badge", "Circular Emblem", "Centered", "Logo Lockup", "Sticker", "Patch"]:
+                return min(1.0, base_score * 1.8)
+            elif "Scene" in entity.name or "Panoramic" in entity.name:
+                return max(0.01, base_score * 0.3)
+            return base_score
+
+        if "composition" in locked_fields and locked_fields["composition"]:
+            composition = locked_fields["composition"]
+            selected_ids.append(composition)
+        else:
+            comp_entities = self.gt.get_entities("compositions")
+            chosen_comp = randomizer.select_weighted(comp_entities, comp_weight_adj, temperature) if comp_entities else None
+            composition = chosen_comp.id if chosen_comp else None
+            if composition: selected_ids.append(composition)
+
         palette = pick("palettes", "palette")
 
         # Decorators, Textures, Effects
