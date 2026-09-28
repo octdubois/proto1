@@ -74,6 +74,7 @@ class ValidationScores(BaseModel):
     compatibility_score: float = 0.0
     novelty_score: float = 0.0
     wildcards_used: bool = False
+    debug_trace: Dict[str, str] = Field(default_factory=dict)
 
 class SourceVersions(BaseModel):
     ground_truth: str = "1.0"

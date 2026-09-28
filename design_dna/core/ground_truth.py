@@ -26,11 +26,22 @@ class GroundTruth:
         return getattr(self.data, category, [])
 
     def get_entity(self, category: str, entity_id: str):
-        """Returns a specific Entity by ID, or None if not found."""
+        """Returns a specific Entity by ID within a category, or None if not found."""
         entities = self.get_entities(category)
         for entity in entities:
             if entity.id == entity_id:
                 return entity
+        return None
+
+    def get_entity_by_id(self, entity_id: str):
+        """Returns a specific Entity by ID across all categories, or None if not found."""
+        # Using the model fields to check all list categories
+        for field_name in GroundTruthModel.model_fields.keys():
+            if field_name == "version": continue
+            entities = getattr(self.data, field_name, [])
+            for entity in entities:
+                if entity.id == entity_id:
+                    return entity
         return None
 
     def validate_reference(self, category: str, entity_id: str) -> bool:

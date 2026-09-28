@@ -35,7 +35,7 @@ class DesignGenerator:
                 return None
 
             def weight_func(entity):
-                return self.compat.calculate_aggregate_score(entity.id, selected_ids)
+                return self.compat.calculate_aggregate_score(entity.id, selected_ids, self.gt)
 
             chosen = randomizer.select_weighted(entities, weight_func, temperature)
             if chosen:
@@ -105,7 +105,7 @@ class DesignGenerator:
 
         # Strongly bias towards graphic/illustration styles for merch
         def style_weight_adj(entity):
-            base_score = self.compat.calculate_aggregate_score(entity.id, selected_ids)
+            base_score = self.compat.calculate_aggregate_score(entity.id, selected_ids, self.gt)
             if entity.family in ["Graphic Design", "Illustration", "Digital"]:
                 return min(1.0, base_score * 1.5)
             elif entity.family in ["Traditional", "Modern"]:
@@ -125,7 +125,7 @@ class DesignGenerator:
 
         # Strongly bias towards standalone compositions
         def comp_weight_adj(entity):
-            base_score = self.compat.calculate_aggregate_score(entity.id, selected_ids)
+            base_score = self.compat.calculate_aggregate_score(entity.id, selected_ids, self.gt)
             if entity.name in ["Badge", "Circular Emblem", "Centered", "Logo Lockup", "Sticker", "Patch"]:
                 return min(1.0, base_score * 1.8)
             elif "Scene" in entity.name or "Panoramic" in entity.name:
@@ -190,7 +190,7 @@ class DesignGenerator:
         )
 
         # 3. Calculate Scores
-        compat_score = self.compat.calculate_design_compatibility(selected_ids)
+        compat_score, trace = self.compat.calculate_design_compatibility_with_trace(selected_ids, self.gt)
 
         design_attrs = {
             "occasion": occasion,
@@ -207,7 +207,8 @@ class DesignGenerator:
         dna.validation = ValidationScores(
             compatibility_score=round(compat_score, 2),
             novelty_score=round(novelty_score, 2),
-            wildcards_used=temperature >= wildcard_threshold
+            wildcards_used=temperature >= wildcard_threshold,
+            debug_trace=trace
         )
 
         return dna

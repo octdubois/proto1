@@ -164,35 +164,60 @@
     {
       "id": "occ_f13c41",
       "name": "Easter",
-      "family": "Event",
+      "family": "Holiday",
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "event"
+        "event",
+        "spring",
+        "cute",
+        "rabbit",
+        "floral",
+        "holiday"
       ],
       "characteristics": [
         "distinctive"
       ],
-      "preferred_moods": [],
-      "preferred_styles": [],
-      "preferred_palettes": [],
+      "preferred_moods": [
+        "Happy",
+        "Playful",
+        "Cute"
+      ],
+      "preferred_styles": [
+        "Illustration",
+        "Kawaii"
+      ],
+      "preferred_palettes": [
+        "Pastel",
+        "Spring"
+      ],
       "preferred_compositions": []
     },
     {
       "id": "occ_4aeacf",
       "name": "Thanksgiving",
-      "family": "Event",
+      "family": "Holiday",
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "event"
+        "event",
+        "autumn",
+        "harvest",
+        "holiday",
+        "family"
       ],
       "characteristics": [
         "distinctive"
       ],
-      "preferred_moods": [],
+      "preferred_moods": [
+        "Cozy",
+        "Warm"
+      ],
       "preferred_styles": [],
-      "preferred_palettes": [],
+      "preferred_palettes": [
+        "Earth Tones",
+        "Autumn"
+      ],
       "preferred_compositions": []
     },
     {
@@ -232,18 +257,28 @@
     {
       "id": "occ_53b290",
       "name": "St. Patrick's Day",
-      "family": "Event",
+      "family": "Holiday",
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "event"
+        "event",
+        "spring",
+        "luck",
+        "holiday",
+        "green"
       ],
       "characteristics": [
         "distinctive"
       ],
-      "preferred_moods": [],
+      "preferred_moods": [
+        "Playful",
+        "Energetic"
+      ],
       "preferred_styles": [],
-      "preferred_palettes": [],
+      "preferred_palettes": [
+        "Green",
+        "Gold"
+      ],
       "preferred_compositions": []
     },
     {
@@ -253,12 +288,19 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "event"
+        "event",
+        "floral",
+        "nature",
+        "warm",
+        "pastel"
       ],
       "characteristics": [
         "distinctive"
       ],
-      "preferred_moods": [],
+      "preferred_moods": [
+        "Peaceful",
+        "Happy"
+      ],
       "preferred_styles": [],
       "preferred_palettes": [],
       "preferred_compositions": []
@@ -287,14 +329,24 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "event"
+        "event",
+        "cold",
+        "snow",
+        "ice",
+        "dark"
       ],
       "characteristics": [
         "distinctive"
       ],
-      "preferred_moods": [],
+      "preferred_moods": [
+        "Cozy",
+        "Mysterious"
+      ],
       "preferred_styles": [],
-      "preferred_palettes": [],
+      "preferred_palettes": [
+        "Cool Tones",
+        "Monochrome"
+      ],
       "preferred_compositions": []
     },
     {
