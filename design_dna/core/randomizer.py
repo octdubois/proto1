@@ -38,21 +38,27 @@ class TemperatureRandomizer:
             best_items = [item for item, w in zip(valid_items, valid_weights) if w == max_weight]
             return self.rng.choice(best_items)
 
-        # Normalize temperature to a power
-        # T=50 -> power=1 (proportional)
-        # T < 50 -> power > 1 (exaggerates differences, prefers high weights)
-        # T > 50 -> power < 1 (flattens differences, more random)
+        # Normalize temperature to a continuous exponent (power)
+        # T = 0   -> Highest compatibility strictly preferred (Handled above deterministically)
+        # T = 50  -> power = 1.0 (Normal weighted probabilities)
+        # T = 100 -> power = 0.1 (Flattens probabilities, exploratory, allows unusual/wildcards)
 
-        # Mapping 1 to 99 to an exponent
         if temperature < 50:
-            # Scale 1-49 to exponent 5.0 -> 1.1
-            power = 1.0 + (50 - temperature) / 10.0
-        elif temperature == 50:
-            power = 1.0
+            # Scale 1-49 to exponent range [5.0 ... 1.0] (continuous)
+            power = 1.0 + ((50 - temperature) / 50.0) * 4.0
         else:
-            # Scale 51-100 to exponent 0.9 -> 0.1
-            power = 1.0 - (temperature - 50) / 55.0
+            # Scale 50-100 to exponent range [1.0 ... 0.1] (continuous)
+            power = 1.0 - ((temperature - 50) / 50.0) * 0.9
 
         adjusted_weights = [math.pow(w, power) for w in valid_weights]
+
+        # Determine if we should allow a "wildcard" by injecting slight noise to low scores
+        # at high temperatures, but hard zeros (w==0.0) are already filtered out.
+        from .config import AppConfig
+        wildcard_threshold = AppConfig().generation_limits.get("wildcard_threshold_temperature", 60)
+
+        if temperature >= wildcard_threshold:
+            # Flatten low weights slightly more to allow wildcard selections to have a realistic chance
+            adjusted_weights = [w + 0.1 if w > 0 else 0 for w in adjusted_weights]
 
         return self.rng.choices(valid_items, weights=adjusted_weights, k=1)[0]

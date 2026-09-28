@@ -9,5 +9,10 @@
         "avoid_exact": true,
         "avoid_near": false,
         "near_duplicate_threshold": 0.85
+    },
+    "generation_limits": {
+        "min_secondary_subjects": 0,
+        "max_secondary_subjects": 3,
+        "wildcard_threshold_temperature": 60
     }
 }

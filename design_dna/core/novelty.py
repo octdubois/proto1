@@ -34,7 +34,7 @@ class NoveltyEngine:
         weights = {
             "occasion": 1.0,
             "theme": 1.0,
-            "subject": 2.0,
+            "primary_subject": 2.0,
             "art_style": 1.5,
             "mood": 1.0,
             "palette": 0.5,

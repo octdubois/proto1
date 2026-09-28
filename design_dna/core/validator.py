@@ -19,7 +19,7 @@ class Validator:
         ids_to_check = {
             "occasions": dna.context.occasion,
             "themes": dna.context.theme,
-            "subjects": dna.design.subject,
+            "subjects": dna.design.primary_subject,
             "actions": dna.design.action,
             "art_styles": dna.design.art_style,
             "compositions": dna.design.composition,

@@ -2,11 +2,14 @@ import json
 from pathlib import Path
 from typing import List, Dict
 
+from typing import Optional
+
 class CompatibilityRule:
-    def __init__(self, source: str, target: str, score: float):
+    def __init__(self, source: str, target: str, score: float, relationship_type: str = "symmetric"):
         self.source = source
         self.target = target
         self.score = score
+        self.relationship_type = relationship_type
 
 from .paths import get_data_path
 
@@ -29,13 +32,23 @@ class CompatibilityEngine:
 
     def get_score(self, source_id: str, target_id: str) -> float:
         """
-        Gets the compatibility score between two entities.
-        If no explicit rule exists, returns 0.5 (neutral).
+        Gets the authoritative compatibility score between two entities.
+        Checks directional rules first (source -> target).
+        Falls back to symmetric rules.
+        Defaults to 0.5 (neutral) if no rule exists.
         """
+        # 1. Check strict directional rule (Source -> Target)
         for rule in self.rules:
-            if (rule.source == source_id and rule.target == target_id) or \
-               (rule.source == target_id and rule.target == source_id):
+            if rule.source == source_id and rule.target == target_id and rule.relationship_type == "directional":
                 return rule.score
+
+        # 2. Check symmetric rule
+        for rule in self.rules:
+            if rule.relationship_type != "directional":
+                if (rule.source == source_id and rule.target == target_id) or \
+                   (rule.source == target_id and rule.target == source_id):
+                    return rule.score
+
         return 0.5
 
     def calculate_aggregate_score(self, target_id: str, context_ids: List[str]) -> float:
