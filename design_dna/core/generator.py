@@ -74,10 +74,19 @@ class DesignGenerator:
         environment = pick("environments", "environment")
 
         # Concept Formulation
+        # Make concepts more dynamic based on context and temperature
+        rel_options = ["subject_in_environment", "subject_dominating_environment", "environment_dwarfing_subject"] if environment else ["subject_isolated", "subject_floating", "subject_breaking_frame"]
+
+        hook_options = ["balanced_presentation", "dramatic_lighting", "dynamic_pose"]
+        if temperature > 60:
+            hook_options.extend(["unexpected_scale", "surreal_juxtaposition", "exaggerated_perspective"])
+
+        narrative_options = ["character_scene", "action_sequence", "moment_before_impact"] if action else ["portrait", "still_life", "heroic_stance", "candid_observation"]
+
         concept = ConceptLayer(
-            relationship="subject_in_environment" if environment else "subject_isolated",
-            visual_hook="unexpected_scale" if temperature > 80 else "balanced_presentation",
-            narrative_type="character_scene" if action else "portrait"
+            relationship=randomizer.rng.choice(rel_options),
+            visual_hook=randomizer.rng.choice(hook_options),
+            narrative_type=randomizer.rng.choice(narrative_options)
         )
 
         # Moods
