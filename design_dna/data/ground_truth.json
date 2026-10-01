@@ -1074,7 +1074,8 @@
       "complexity": 3,
       "tags": [
         "animal",
-        "cats"
+        "cats",
+        "cute"
       ],
       "characteristics": [
         "furry"
@@ -1097,7 +1098,8 @@
       "complexity": 2,
       "tags": [
         "animal",
-        "cats"
+        "cats",
+        "cute"
       ],
       "characteristics": [
         "furry"
@@ -1120,7 +1122,8 @@
       "complexity": 3,
       "tags": [
         "animal",
-        "cats"
+        "cats",
+        "cute"
       ],
       "characteristics": [
         "furry"
@@ -1143,7 +1146,8 @@
       "complexity": 1,
       "tags": [
         "animal",
-        "cats"
+        "cats",
+        "cute"
       ],
       "characteristics": [
         "furry"
@@ -1166,7 +1170,8 @@
       "complexity": 2,
       "tags": [
         "animal",
-        "cats"
+        "cats",
+        "cute"
       ],
       "characteristics": [
         "furry"
@@ -1189,7 +1194,8 @@
       "complexity": 2,
       "tags": [
         "animal",
-        "cats"
+        "cats",
+        "cute"
       ],
       "characteristics": [
         "furry"
@@ -1212,7 +1218,8 @@
       "complexity": 3,
       "tags": [
         "animal",
-        "cats"
+        "cats",
+        "cute"
       ],
       "characteristics": [
         "furry"
@@ -1235,7 +1242,8 @@
       "complexity": 3,
       "tags": [
         "animal",
-        "cats"
+        "cats",
+        "cute"
       ],
       "characteristics": [
         "furry"
@@ -1258,7 +1266,8 @@
       "complexity": 1,
       "tags": [
         "animal",
-        "cats"
+        "cats",
+        "cute"
       ],
       "characteristics": [
         "furry"
@@ -1281,7 +1290,8 @@
       "complexity": 3,
       "tags": [
         "animal",
-        "cats"
+        "cats",
+        "cute"
       ],
       "characteristics": [
         "furry"
@@ -1304,7 +1314,8 @@
       "complexity": 1,
       "tags": [
         "animal",
-        "dogs"
+        "dogs",
+        "cute"
       ],
       "characteristics": [
         "furry"
@@ -1327,7 +1338,8 @@
       "complexity": 1,
       "tags": [
         "animal",
-        "dogs"
+        "dogs",
+        "cute"
       ],
       "characteristics": [
         "furry"
@@ -1350,7 +1362,8 @@
       "complexity": 1,
       "tags": [
         "animal",
-        "dogs"
+        "dogs",
+        "cute"
       ],
       "characteristics": [
         "furry"
@@ -1373,7 +1386,8 @@
       "complexity": 3,
       "tags": [
         "animal",
-        "dogs"
+        "dogs",
+        "cute"
       ],
       "characteristics": [
         "furry"
@@ -1396,7 +1410,8 @@
       "complexity": 1,
       "tags": [
         "animal",
-        "dogs"
+        "dogs",
+        "cute"
       ],
       "characteristics": [
         "furry"
@@ -1419,7 +1434,8 @@
       "complexity": 2,
       "tags": [
         "animal",
-        "dogs"
+        "dogs",
+        "cute"
       ],
       "characteristics": [
         "furry"
@@ -1442,7 +1458,8 @@
       "complexity": 1,
       "tags": [
         "animal",
-        "dogs"
+        "dogs",
+        "cute"
       ],
       "characteristics": [
         "furry"
@@ -1465,7 +1482,8 @@
       "complexity": 3,
       "tags": [
         "animal",
-        "dogs"
+        "dogs",
+        "cute"
       ],
       "characteristics": [
         "furry"
@@ -1488,7 +1506,8 @@
       "complexity": 1,
       "tags": [
         "animal",
-        "dogs"
+        "dogs",
+        "cute"
       ],
       "characteristics": [
         "furry"
@@ -1511,7 +1530,8 @@
       "complexity": 1,
       "tags": [
         "animal",
-        "dogs"
+        "dogs",
+        "cute"
       ],
       "characteristics": [
         "furry"
@@ -1534,7 +1554,8 @@
       "complexity": 1,
       "tags": [
         "animal",
-        "dogs"
+        "dogs",
+        "cute"
       ],
       "characteristics": [
         "furry"
@@ -1557,7 +1578,8 @@
       "complexity": 2,
       "tags": [
         "animal",
-        "dogs"
+        "dogs",
+        "cute"
       ],
       "characteristics": [
         "furry"
@@ -3371,7 +3393,10 @@
       "subcategory": "Plants",
       "complexity": 2,
       "tags": [
-        "nature"
+        "nature",
+        "spring",
+        "floral",
+        "cute"
       ],
       "characteristics": [
         "distinctive"
@@ -3388,7 +3413,10 @@
       "subcategory": "Plants",
       "complexity": 2,
       "tags": [
-        "nature"
+        "nature",
+        "spring",
+        "floral",
+        "cute"
       ],
       "characteristics": [
         "distinctive"
@@ -3405,7 +3433,10 @@
       "subcategory": "Plants",
       "complexity": 2,
       "tags": [
-        "nature"
+        "nature",
+        "spring",
+        "floral",
+        "cute"
       ],
       "characteristics": [
         "distinctive"
@@ -3422,7 +3453,10 @@
       "subcategory": "Plants",
       "complexity": 2,
       "tags": [
-        "nature"
+        "nature",
+        "spring",
+        "floral",
+        "cute"
       ],
       "characteristics": [
         "distinctive"
@@ -4799,7 +4833,9 @@
       "subcategory": "Animals",
       "complexity": 3,
       "tags": [
-        "nature"
+        "nature",
+        "spring",
+        "cute"
       ],
       "characteristics": [
         "distinctive"
@@ -4850,7 +4886,9 @@
       "subcategory": "Animals",
       "complexity": 2,
       "tags": [
-        "nature"
+        "nature",
+        "spring",
+        "cute"
       ],
       "characteristics": [
         "distinctive"
@@ -5088,7 +5126,9 @@
       "subcategory": "Animals",
       "complexity": 1,
       "tags": [
-        "nature"
+        "nature",
+        "spring",
+        "cute"
       ],
       "characteristics": [
         "distinctive"
@@ -7289,6 +7329,37 @@
       "preferred_moods": [],
       "preferred_styles": [],
       "preferred_palettes": [],
+      "preferred_compositions": []
+    },
+    {
+      "id": "sub_dccb68",
+      "name": "Rabbit",
+      "family": "Animals",
+      "subcategory": "Wild",
+      "complexity": 1,
+      "tags": [
+        "spring",
+        "cute",
+        "animal",
+        "easter",
+        "rabbit"
+      ],
+      "characteristics": [
+        "furry",
+        "ears"
+      ],
+      "preferred_moods": [
+        "Playful",
+        "Happy",
+        "Cute"
+      ],
+      "preferred_styles": [
+        "Illustration",
+        "Kawaii"
+      ],
+      "preferred_palettes": [
+        "Pastel"
+      ],
       "preferred_compositions": []
     }
   ],
@@ -13532,7 +13603,10 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "color"
+        "color",
+        "cute",
+        "spring",
+        "easter"
       ],
       "characteristics": [],
       "preferred_moods": [],
@@ -13946,7 +14020,10 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "pal"
+        "pal",
+        "cute",
+        "spring",
+        "easter"
       ],
       "characteristics": [
         "distinctive"
@@ -13997,7 +14074,10 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "pal"
+        "pal",
+        "cute",
+        "spring",
+        "easter"
       ],
       "characteristics": [
         "distinctive"

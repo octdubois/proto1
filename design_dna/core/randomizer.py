@@ -39,16 +39,19 @@ class TemperatureRandomizer:
             return self.rng.choice(best_items)
 
         # Normalize temperature to a continuous exponent (power)
+        # To overcome the "probability dilution" of having hundreds of neutral (0.5) options in the Ground Truth,
+        # we must use steep exponents so highly compatible items (0.8+) stand out against the massive neutral pool.
         # T = 0   -> Highest compatibility strictly preferred (Handled above deterministically)
-        # T = 50  -> power = 1.0 (Normal weighted probabilities)
-        # T = 100 -> power = 0.1 (Flattens probabilities, exploratory, allows unusual/wildcards)
+        # T = 30  -> power = 15.0 (Very strict, strongly prefers high compatibility)
+        # T = 50  -> power = 8.0  (Normal weighted probabilities, still highly favors matches over neutrals)
+        # T = 100 -> power = 0.5  (Flattens probabilities, exploratory, allows unusual/wildcards)
 
-        if temperature < 50:
-            # Scale 1-49 to exponent range [5.0 ... 1.0] (continuous)
-            power = 1.0 + ((50 - temperature) / 50.0) * 4.0
+        if temperature <= 50:
+            # Scale 1-50 to exponent range [25.0 ... 8.0] (continuous)
+            power = 8.0 + ((50 - temperature) / 50.0) * 17.0
         else:
-            # Scale 50-100 to exponent range [1.0 ... 0.1] (continuous)
-            power = 1.0 - ((temperature - 50) / 50.0) * 0.9
+            # Scale 51-100 to exponent range [8.0 ... 0.5] (continuous)
+            power = 0.5 + ((100 - temperature) / 50.0) * 7.5
 
         adjusted_weights = [math.pow(w, power) for w in valid_weights]
 
