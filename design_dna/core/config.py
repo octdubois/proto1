@@ -14,6 +14,11 @@ class AppConfig:
                     "avoid_exact": True,
                     "avoid_near": False,
                     "near_duplicate_threshold": 0.85
+                },
+                "generation_limits": {
+                    "min_secondary_subjects": 0,
+                    "max_secondary_subjects": 3,
+                    "wildcard_threshold_temperature": 60
                 }
             }
         with open(self.config_path, "r", encoding="utf-8") as f:
@@ -26,3 +31,11 @@ class AppConfig:
     @property
     def duplicate_detection(self):
         return self.settings.get("duplicate_detection", {})
+
+    @property
+    def generation_limits(self):
+        return self.settings.get("generation_limits", {
+            "min_secondary_subjects": 0,
+            "max_secondary_subjects": 3,
+            "wildcard_threshold_temperature": 60
+        })

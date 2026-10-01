@@ -50,7 +50,7 @@ class StorageEngine:
             "filename": filename,
             "occasion": dna.context.occasion,
             "theme": dna.context.theme,
-            "subject": dna.design.subject,
+            "primary_subject": dna.design.primary_subject,
             "art_style": dna.design.art_style,
             "compatibility_score": dna.validation.compatibility_score,
             "novelty_score": dna.validation.novelty_score

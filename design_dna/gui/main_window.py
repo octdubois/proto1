@@ -95,8 +95,12 @@ class MainWindow(QMainWindow):
         categories = {
             "occasion": "occasions",
             "theme": "themes",
-            "subject": "subjects",
-            "art_style": "art_styles"
+            "primary_subject": "subjects",
+            "art_style": "art_styles",
+            "environment": "environments",
+            "palette": "palettes",
+            "mood": "moods",
+            "composition": "compositions"
         }
 
         for field, category in categories.items():
@@ -104,7 +108,7 @@ class MainWindow(QMainWindow):
             combo = QComboBox()
             combo.addItem("-- Select --", None)
             for entity in self.gt.get_entities(category):
-                combo.addItem(entity.display_name, entity.id)
+                combo.addItem(entity.name, entity.id)
             combo.setEnabled(False)
 
             check.toggled.connect(combo.setEnabled)
@@ -231,11 +235,16 @@ class MainWindow(QMainWindow):
         self.novelty.add_to_history({
             "occasion": dna.context.occasion,
             "theme": dna.context.theme,
-            "subject": dna.design.subject,
+            "primary_subject": dna.design.primary_subject,
             "art_style": dna.design.art_style,
             "mood": dna.design.mood[0] if dna.design.mood else None,
             "palette": dna.design.palette,
-            "composition": dna.design.composition
+            "composition": dna.design.composition,
+            "design_id": dna.generation.id,
+            "timestamp": dna.generation.timestamp,
+            "filename": filename,
+            "seed": seed,
+            "temperature": temp
         })
 
         self.json_viewer.setPlainText(dna.model_dump_json(indent=4))
@@ -320,7 +329,7 @@ class MainWindow(QMainWindow):
             ts = entry.get("timestamp", "")[:19].replace("T", " ")
             self.history_table.setItem(row, 1, QTableWidgetItem(ts))
 
-            self.history_table.setItem(row, 2, QTableWidgetItem(str(entry.get("subject", ""))))
+            self.history_table.setItem(row, 2, QTableWidgetItem(str(entry.get("primary_subject", ""))))
             self.history_table.setItem(row, 3, QTableWidgetItem(str(entry.get("art_style", ""))))
             self.history_table.setItem(row, 4, QTableWidgetItem(f"{entry.get('novelty_score', 0):.2f}"))
 

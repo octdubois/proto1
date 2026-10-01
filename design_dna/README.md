@@ -10,7 +10,7 @@ A senior Python software architecture for generating structured, randomized artw
 
 ## Running
 
-1. Run the application: `python app.py`
+1. Run the application: `python design_dna/app.py`
 
 ## Structure
 
