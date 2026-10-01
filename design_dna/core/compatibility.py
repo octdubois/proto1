@@ -112,8 +112,13 @@ class CompatibilityEngine:
                 if s == 0.0:
                     return 0.0, [f"HARD INCOMPATIBILITY: {reasons[i]}"]
 
-        avg_score = sum(scores) / len(scores)
-        return avg_score, reasons
+        # Instead of averaging (which dilutes strong affinities with neutral context items),
+        # we take the maximum score so that strong affinities propagate through the pipeline.
+        max_score = max(scores)
+
+        # Filter reasons to only those contributing to the max score
+        max_reasons = [reasons[i] for i, s in enumerate(scores) if s == max_score]
+        return max_score, max_reasons
 
     def calculate_aggregate_score(self, target_id: str, context_ids: List[str], ground_truth=None) -> float:
         score, _ = self.calculate_aggregate_score_with_trace(target_id, context_ids, ground_truth)
