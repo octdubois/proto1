@@ -24,11 +24,11 @@ def test_compatibility_engine():
     ce = CompatibilityEngine()
     # Explicit rules based on updated compatibility_rules.json
     assert ce.get_score("occ_halloween", "sub_black_cat") == 1.0
-    # Missing rules default to 0.5
-    assert ce.get_score("occ_general", "sub_black_cat") == 0.5
+    # Missing rules default to 0.05 now
+    assert ce.get_score("occ_general", "sub_black_cat") == 0.05
 
     # Aggregation
-    assert ce.calculate_aggregate_score("sty_gothic", ["occ_halloween", "sub_black_cat"]) >= 0.5
+    assert ce.calculate_aggregate_score("sty_gothic", ["occ_halloween", "sub_black_cat"]) >= 0.05
 
 def test_temperature_randomizer():
     tr = TemperatureRandomizer(seed=42)

@@ -12,6 +12,12 @@ class Entity(BaseModel):
     complexity: Optional[int] = None
 
     # Intrinsic metadata - fallback/descriptive, but Compatibility Rules are authoritative
+    pillar: Optional[str] = None
+    allowed_themes: List[str] = Field(default_factory=list)
+    allowed_subject_families: List[str] = Field(default_factory=list)
+    preferred_themes: List[str] = Field(default_factory=list)
+    preferred_subjects: List[str] = Field(default_factory=list)
+    preferred_decorations: List[str] = Field(default_factory=list)
     preferred_moods: List[str] = Field(default_factory=list)
     preferred_styles: List[str] = Field(default_factory=list)
     preferred_palettes: List[str] = Field(default_factory=list)

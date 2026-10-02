@@ -24,6 +24,9 @@ class DesignGenerator:
         randomizer = TemperatureRandomizer(seed)
         selected_ids: List[str] = []
 
+        # Primary context anchor is usually the occasion
+        # If it's locked, use it. Otherwise, whatever gets picked first becomes the anchor.
+
         def pick(category: str, key_name: str) -> Optional[str]:
             if key_name in locked_fields and locked_fields[key_name]:
                 val = locked_fields[key_name]
@@ -34,13 +37,39 @@ class DesignGenerator:
             if not entities:
                 return None
 
+            anchor_id = selected_ids[0] if selected_ids else None
+
             def weight_func(entity):
-                return self.compat.calculate_aggregate_score(entity.id, selected_ids, self.gt)
+                return self.compat.calculate_aggregate_score(entity.id, selected_ids, self.gt, anchor_id=anchor_id)
 
             chosen = randomizer.select_weighted(entities, weight_func, temperature)
             if chosen:
                 selected_ids.append(chosen.id)
                 return chosen.id
+
+            # Hard Fallback: If empty pool (all items filtered out due to whitelist or 0.0 scores),
+            # we must fallback to the top-scoring items under the primary anchor, rather than purely random choice.
+            if not entities:
+                return None
+
+            # Sort entities by their raw intrinsic score against the anchor
+            fallback_scores = [(ent, self.compat.get_score(anchor_id, ent.id, self.gt) if anchor_id else 1.0) for ent in entities]
+            # Exclude hard zeros if possible
+            valid_fallbacks = [item for item in fallback_scores if item[1] > 0.0]
+            if not valid_fallbacks:
+                valid_fallbacks = fallback_scores
+
+            valid_fallbacks.sort(key=lambda x: x[1], reverse=True)
+
+            # Take the top tier (e.g. top 10% or at least 1)
+            top_score = valid_fallbacks[0][1]
+            best_candidates = [item[0] for item in valid_fallbacks if item[1] == top_score]
+
+            fallback = randomizer.rng.choice(best_candidates) if best_candidates else None
+            if fallback:
+                selected_ids.append(fallback.id)
+                return fallback.id
+
             return None
 
         # 1. Pipeline Selection
@@ -103,9 +132,11 @@ class DesignGenerator:
             m1 = pick("moods", "mood_1")
             if m1: moods.append(m1)
 
+        anchor = selected_ids[0] if selected_ids else None
+
         # Strongly bias towards graphic/illustration styles for merch
         def style_weight_adj(entity):
-            base_score = self.compat.calculate_aggregate_score(entity.id, selected_ids, self.gt)
+            base_score = self.compat.calculate_aggregate_score(entity.id, selected_ids, self.gt, anchor_id=anchor)
             if entity.family in ["Graphic Design", "Illustration", "Digital"]:
                 return min(1.0, base_score * 1.5)
             elif entity.family in ["Traditional", "Modern"]:
@@ -125,7 +156,7 @@ class DesignGenerator:
 
         # Strongly bias towards standalone compositions
         def comp_weight_adj(entity):
-            base_score = self.compat.calculate_aggregate_score(entity.id, selected_ids, self.gt)
+            base_score = self.compat.calculate_aggregate_score(entity.id, selected_ids, self.gt, anchor_id=anchor)
             if entity.name in ["Badge", "Circular Emblem", "Centered", "Logo Lockup", "Sticker", "Patch"]:
                 return min(1.0, base_score * 1.8)
             elif "Scene" in entity.name or "Panoramic" in entity.name:

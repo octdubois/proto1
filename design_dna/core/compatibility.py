@@ -72,14 +72,34 @@ class CompatibilityEngine:
                 target_identifiers = [target_entity.name, target_entity.family, target_entity.subcategory]
                 source_identifiers = [source_entity.name, source_entity.family, source_entity.subcategory]
 
+                source_prefs = (
+                    getattr(source_entity, "preferred_themes", []) +
+                    getattr(source_entity, "preferred_subjects", []) +
+                    getattr(source_entity, "preferred_decorations", []) +
+                    getattr(source_entity, "preferred_moods", []) +
+                    getattr(source_entity, "preferred_styles", []) +
+                    getattr(source_entity, "preferred_palettes", []) +
+                    getattr(source_entity, "preferred_compositions", [])
+                )
+
+                target_prefs = (
+                    getattr(target_entity, "preferred_themes", []) +
+                    getattr(target_entity, "preferred_subjects", []) +
+                    getattr(target_entity, "preferred_decorations", []) +
+                    getattr(target_entity, "preferred_moods", []) +
+                    getattr(target_entity, "preferred_styles", []) +
+                    getattr(target_entity, "preferred_palettes", []) +
+                    getattr(target_entity, "preferred_compositions", [])
+                )
+
                 # Source prefers Target
-                s_pref, s_val = check_affinity(source_entity.preferred_moods + source_entity.preferred_styles + source_entity.preferred_palettes + source_entity.preferred_compositions, target_identifiers)
+                s_pref, s_val = check_affinity(source_prefs, target_identifiers)
                 if s_pref:
                     score += 0.25
                     reasons.append(f"Source explicit affinity for '{s_val}'")
 
                 # Target prefers Source
-                t_pref, t_val = check_affinity(target_entity.preferred_moods + target_entity.preferred_styles + target_entity.preferred_palettes + target_entity.preferred_compositions, source_identifiers)
+                t_pref, t_val = check_affinity(target_prefs, source_identifiers)
                 if t_pref:
                     score += 0.25
                     reasons.append(f"Target explicit affinity for '{t_val}'")
@@ -87,21 +107,37 @@ class CompatibilityEngine:
                 final_score = min(1.0, score)
                 if reasons:
                     return final_score, f"Intrinsic Affinity ({final_score:.2f}): " + ", ".join(reasons)
-                return 0.5, "Neutral fallback (no semantic overlap)"
+                return 0.05, "Neutral fallback (no semantic overlap)"
 
-        return 0.5, "Neutral fallback (no explicit rule or ground truth data)"
+        return 0.05, "Neutral fallback (no explicit rule or ground truth data)"
 
     def get_score(self, source_id: str, target_id: str, ground_truth=None) -> float:
         score, _ = self.get_score_with_reason(source_id, target_id, ground_truth)
         return score
 
-    def calculate_aggregate_score_with_trace(self, target_id: str, context_ids: List[str], ground_truth=None) -> (float, List[str]):
+    def calculate_aggregate_score_with_trace(self, target_id: str, context_ids: List[str], ground_truth=None, anchor_id: str = None) -> (float, List[str]):
         if not context_ids:
-            return 0.5, ["No context provided"]
+            return 0.05, ["No context provided"]
+
+        # Optional Whitelist Filtering based on the primary anchor
+        if ground_truth and anchor_id:
+            anchor_entity = ground_truth.get_entity_by_id(anchor_id)
+            target_entity = ground_truth.get_entity_by_id(target_id)
+
+            if anchor_entity and target_entity:
+                # Filter by allowed themes
+                if getattr(anchor_entity, "allowed_themes", []) and target_id.startswith("thm_"):
+                    if target_entity.name not in anchor_entity.allowed_themes:
+                        return 0.0, [f"Blocked by anchor whitelist: '{target_entity.name}' not in allowed themes"]
+
+                # Filter by allowed subjects
+                if getattr(anchor_entity, "allowed_subject_families", []) and target_id.startswith("sub_"):
+                    if target_entity.family not in anchor_entity.allowed_subject_families:
+                        return 0.0, [f"Blocked by anchor whitelist: '{target_entity.family}' not in allowed subject families"]
 
         results = [self.get_score_with_reason(ctx, target_id, ground_truth) for ctx in context_ids if ctx]
         if not results:
-            return 0.5, ["No valid context items found"]
+            return 0.05, ["No valid context items found"]
 
         scores = [r[0] for r in results]
         reasons = [r[1] for r in results]
@@ -112,16 +148,26 @@ class CompatibilityEngine:
                 if s == 0.0:
                     return 0.0, [f"HARD INCOMPATIBILITY: {reasons[i]}"]
 
-        # Instead of averaging (which dilutes strong affinities with neutral context items),
-        # we take the maximum score so that strong affinities propagate through the pipeline.
+        # To prevent the context max() hijack, we evaluate the score against the Anchor (if present).
+        # The item must not be severely penalized by the primary anchor.
+        if anchor_id and anchor_id in context_ids:
+            anchor_idx = context_ids.index(anchor_id)
+            anchor_score = scores[anchor_idx]
+            # If the item has zero affinity with the anchor, don't let a secondary context item push it to 1.0.
+            # We cap the max score based on its relationship with the anchor.
+            if anchor_score <= 0.05:
+                # Highly penalized by the anchor
+                return anchor_score, [f"Severely capped by anchor score: {reasons[anchor_idx]}"]
+
+        # We take the maximum score so that strong affinities propagate through the pipeline.
         max_score = max(scores)
 
         # Filter reasons to only those contributing to the max score
         max_reasons = [reasons[i] for i, s in enumerate(scores) if s == max_score]
         return max_score, max_reasons
 
-    def calculate_aggregate_score(self, target_id: str, context_ids: List[str], ground_truth=None) -> float:
-        score, _ = self.calculate_aggregate_score_with_trace(target_id, context_ids, ground_truth)
+    def calculate_aggregate_score(self, target_id: str, context_ids: List[str], ground_truth=None, anchor_id: str = None) -> float:
+        score, _ = self.calculate_aggregate_score_with_trace(target_id, context_ids, ground_truth, anchor_id)
         return score
 
     def calculate_design_compatibility_with_trace(self, selected_ids: List[str], ground_truth=None) -> (float, Dict[str, str]):

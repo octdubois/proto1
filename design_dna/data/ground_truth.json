@@ -8,8 +8,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
+        "halloween",
+        "holiday",
+        "autumn",
         "spooky",
-        "autumn"
+        "fall",
+        "creepy"
       ],
       "characteristics": [
         "festive"
@@ -25,7 +29,28 @@
       "preferred_palettes": [
         "Halloween Night"
       ],
-      "preferred_compositions": []
+      "preferred_compositions": [],
+      "pillar": "Seasonal & Holiday",
+      "allowed_themes": [
+        "Gothic",
+        "Haunted",
+        "Macabre",
+        "Noir",
+        "Spooky"
+      ],
+      "allowed_subject_families": [
+        "Holiday Icons",
+        "Animals",
+        "Fantasy",
+        "Nature"
+      ],
+      "preferred_decorations": [
+        "Pumpkins",
+        "Bats",
+        "Spider Webs",
+        "Skulls",
+        "Moon"
+      ]
     },
     {
       "id": "occ_c52783",
@@ -34,7 +59,11 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
+        "christmas",
+        "holiday",
         "winter",
+        "festive",
+        "snow",
         "joy"
       ],
       "characteristics": [
@@ -51,7 +80,27 @@
       "preferred_palettes": [
         "Christmas Classic"
       ],
-      "preferred_compositions": []
+      "preferred_compositions": [],
+      "pillar": "Seasonal & Holiday",
+      "allowed_themes": [
+        "Cozy",
+        "Whimsical",
+        "Baking",
+        "Candy Store",
+        "Winter"
+      ],
+      "allowed_subject_families": [
+        "Holiday Icons",
+        "Animals",
+        "Nature",
+        "Food"
+      ],
+      "preferred_decorations": [
+        "Snowflakes",
+        "Stars",
+        "Borders",
+        "Ornaments"
+      ]
     },
     {
       "id": "occ_267925",
@@ -78,7 +127,27 @@
         "Pastel",
         "Red/Pink"
       ],
-      "preferred_compositions": []
+      "preferred_compositions": [],
+      "pillar": "Seasonal & Holiday",
+      "allowed_themes": [
+        "Kawaii",
+        "Romantic",
+        "Cozy",
+        "Elegant"
+      ],
+      "allowed_subject_families": [
+        "Holiday Icons",
+        "Animals",
+        "Food",
+        "Objects"
+      ],
+      "preferred_decorations": [
+        "Hearts",
+        "Flowers",
+        "Ribbons",
+        "Stars",
+        "Arrows"
+      ]
     },
     {
       "id": "occ_4ad1b2",
@@ -133,7 +202,28 @@
         "Warm Tones",
         "Vibrant"
       ],
-      "preferred_compositions": []
+      "preferred_compositions": [],
+      "pillar": "Season",
+      "allowed_themes": [
+        "Beach",
+        "Adventure",
+        "Tropical",
+        "Exploration",
+        "Travel"
+      ],
+      "allowed_subject_families": [
+        "Nature",
+        "Animals",
+        "Vehicles",
+        "Objects"
+      ],
+      "preferred_decorations": [
+        "Sun",
+        "Waves",
+        "Palms",
+        "Shells",
+        "Sunglasses"
+      ]
     },
     {
       "id": "occ_55074a",
@@ -159,7 +249,27 @@
       "preferred_palettes": [
         "Neon"
       ],
-      "preferred_compositions": []
+      "preferred_compositions": [],
+      "pillar": "Event",
+      "allowed_themes": [
+        "Cyberpunk",
+        "Technology",
+        "Futurism",
+        "Synthwave",
+        "Digital"
+      ],
+      "allowed_subject_families": [
+        "Technology",
+        "Objects",
+        "Vehicles",
+        "Sci-Fi"
+      ],
+      "preferred_decorations": [
+        "Circuits",
+        "Neon Glow",
+        "Geometric Shapes",
+        "Pixels"
+      ]
     },
     {
       "id": "occ_f13c41",
@@ -191,7 +301,28 @@
         "Pastel",
         "Spring"
       ],
-      "preferred_compositions": []
+      "preferred_compositions": [],
+      "pillar": "Seasonal & Holiday",
+      "allowed_themes": [
+        "Kawaii",
+        "Whimsical",
+        "Cozy",
+        "Spring",
+        "Floral"
+      ],
+      "allowed_subject_families": [
+        "Holiday Icons",
+        "Animals",
+        "Nature",
+        "Food"
+      ],
+      "preferred_decorations": [
+        "Flowers",
+        "Eggs",
+        "Baskets",
+        "Ribbons",
+        "Sun"
+      ]
     },
     {
       "id": "occ_4aeacf",
@@ -1363,6 +1494,9 @@
       "tags": [
         "animal",
         "dogs",
+        "winter",
+        "snow",
+        "cold",
         "cute"
       ],
       "characteristics": [
@@ -1694,7 +1828,11 @@
       "complexity": 2,
       "tags": [
         "animal",
-        "birds"
+        "winter",
+        "cold",
+        "snow",
+        "ice",
+        "cute"
       ],
       "characteristics": [
         "feathers"
@@ -3359,7 +3497,11 @@
       "subcategory": "Edibles",
       "complexity": 2,
       "tags": [
-        "food"
+        "food",
+        "holiday",
+        "baking",
+        "sweet",
+        "cute"
       ],
       "characteristics": [
         "distinctive"
@@ -3575,7 +3717,12 @@
       "subcategory": "Plants",
       "complexity": 3,
       "tags": [
-        "nature"
+        "nature",
+        "winter",
+        "christmas",
+        "pine",
+        "tree",
+        "forest"
       ],
       "characteristics": [
         "distinctive"
@@ -7360,6 +7507,132 @@
       "preferred_palettes": [
         "Pastel"
       ],
+      "preferred_compositions": []
+    },
+    {
+      "id": "sub_e7b7cb",
+      "name": "Santa Claus",
+      "family": "Holiday Icons",
+      "subcategory": "Christmas",
+      "complexity": 2,
+      "tags": [
+        "christmas",
+        "holiday",
+        "winter",
+        "festive",
+        "santa"
+      ],
+      "characteristics": [
+        "iconic"
+      ],
+      "preferred_moods": [],
+      "preferred_styles": [],
+      "preferred_palettes": [],
+      "preferred_compositions": []
+    },
+    {
+      "id": "sub_0ae325",
+      "name": "Snowman",
+      "family": "Holiday Icons",
+      "subcategory": "Christmas",
+      "complexity": 2,
+      "tags": [
+        "christmas",
+        "holiday",
+        "winter",
+        "snow",
+        "cute"
+      ],
+      "characteristics": [
+        "iconic"
+      ],
+      "preferred_moods": [],
+      "preferred_styles": [],
+      "preferred_palettes": [],
+      "preferred_compositions": []
+    },
+    {
+      "id": "sub_8ca4f5",
+      "name": "Reindeer",
+      "family": "Holiday Icons",
+      "subcategory": "Christmas",
+      "complexity": 2,
+      "tags": [
+        "christmas",
+        "holiday",
+        "winter",
+        "animal",
+        "cute"
+      ],
+      "characteristics": [
+        "iconic"
+      ],
+      "preferred_moods": [],
+      "preferred_styles": [],
+      "preferred_palettes": [],
+      "preferred_compositions": []
+    },
+    {
+      "id": "sub_4a0e9c",
+      "name": "Jack-o'-Lantern",
+      "family": "Holiday Icons",
+      "subcategory": "Halloween",
+      "complexity": 2,
+      "tags": [
+        "halloween",
+        "holiday",
+        "autumn",
+        "spooky",
+        "pumpkin"
+      ],
+      "characteristics": [
+        "iconic"
+      ],
+      "preferred_moods": [],
+      "preferred_styles": [],
+      "preferred_palettes": [],
+      "preferred_compositions": []
+    },
+    {
+      "id": "sub_e546d1",
+      "name": "Witch",
+      "family": "Holiday Icons",
+      "subcategory": "Halloween",
+      "complexity": 2,
+      "tags": [
+        "halloween",
+        "holiday",
+        "spooky",
+        "magic",
+        "fantasy"
+      ],
+      "characteristics": [
+        "iconic"
+      ],
+      "preferred_moods": [],
+      "preferred_styles": [],
+      "preferred_palettes": [],
+      "preferred_compositions": []
+    },
+    {
+      "id": "sub_d13d89",
+      "name": "Ghost",
+      "family": "Holiday Icons",
+      "subcategory": "Halloween",
+      "complexity": 2,
+      "tags": [
+        "halloween",
+        "holiday",
+        "spooky",
+        "creepy",
+        "spirit"
+      ],
+      "characteristics": [
+        "iconic"
+      ],
+      "preferred_moods": [],
+      "preferred_styles": [],
+      "preferred_palettes": [],
       "preferred_compositions": []
     }
   ],
@@ -13573,7 +13846,11 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "color"
+        "color",
+        "christmas",
+        "holiday",
+        "winter",
+        "festive"
       ],
       "characteristics": [],
       "preferred_moods": [],
@@ -13816,7 +14093,9 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "pal"
+        "color",
+        "primary colors",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -13833,7 +14112,9 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "pal"
+        "color",
+        "secondary colors",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -13850,7 +14131,9 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "pal"
+        "color",
+        "tertiary colors",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -13867,7 +14150,9 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "pal"
+        "color",
+        "analogous",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -13884,7 +14169,9 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "pal"
+        "color",
+        "complementary",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -13901,7 +14188,9 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "pal"
+        "color",
+        "split complementary",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -13918,7 +14207,9 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "pal"
+        "color",
+        "triadic",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -13935,7 +14226,9 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "pal"
+        "color",
+        "tetradic",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -13952,7 +14245,9 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "pal"
+        "color",
+        "square",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -13969,7 +14264,9 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "pal"
+        "color",
+        "monochromatic",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -13986,7 +14283,9 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "pal"
+        "color",
+        "achromatic",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -14003,7 +14302,9 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "pal"
+        "color",
+        "polychromatic",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -14020,10 +14321,9 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "pal",
-        "cute",
-        "spring",
-        "easter"
+        "color",
+        "warm tones",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -14040,7 +14340,9 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "pal"
+        "color",
+        "cool tones",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -14057,7 +14359,9 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "pal"
+        "color",
+        "neutral tones",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -14074,10 +14378,9 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "pal",
-        "cute",
-        "spring",
-        "easter"
+        "color",
+        "pastel tones",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -14094,7 +14397,9 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "pal"
+        "color",
+        "jewel tones",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -14111,7 +14416,9 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "pal"
+        "color",
+        "earth tones",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -14128,7 +14435,9 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "pal"
+        "color",
+        "sunset glow",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -14145,7 +14454,9 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "pal"
+        "color",
+        "midnight blue",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -14162,7 +14473,9 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "pal"
+        "color",
+        "crimson tide",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -14179,7 +14492,9 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "pal"
+        "color",
+        "forest floor",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -14196,7 +14511,9 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "pal"
+        "color",
+        "desert sand",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -14213,7 +14530,9 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "pal"
+        "color",
+        "ocean depths",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -14230,7 +14549,9 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "pal"
+        "color",
+        "galaxy",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -14247,7 +14568,9 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "pal"
+        "color",
+        "nebula",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -14264,7 +14587,9 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "pal"
+        "color",
+        "supernova",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -14281,7 +14606,9 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "pal"
+        "color",
+        "aurora",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -14298,7 +14625,9 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "pal"
+        "color",
+        "bioluminescence",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -14315,7 +14644,9 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "pal"
+        "color",
+        "ember",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -14332,7 +14663,9 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "pal"
+        "color",
+        "ash",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -14349,7 +14682,9 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "pal"
+        "color",
+        "smoke",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -14366,7 +14701,9 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "pal"
+        "color",
+        "fog",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -14383,7 +14720,9 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "pal"
+        "color",
+        "mist",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -14400,7 +14739,9 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "pal"
+        "color",
+        "cloud",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -14417,7 +14758,9 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "pal"
+        "color",
+        "sky",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -14434,7 +14777,9 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "pal"
+        "color",
+        "space",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -14451,7 +14796,9 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "pal"
+        "color",
+        "void",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -14468,7 +14815,9 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "pal"
+        "color",
+        "abyss",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -14485,7 +14834,9 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "pal"
+        "color",
+        "black hole",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -14502,7 +14853,9 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "pal"
+        "color",
+        "white dwarf",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -14519,7 +14872,9 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "pal"
+        "color",
+        "red giant",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -14536,7 +14891,9 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "pal"
+        "color",
+        "blue supergiant",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -14553,7 +14910,9 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "pal"
+        "color",
+        "pulsar",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -14570,7 +14929,9 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "pal"
+        "color",
+        "quasar",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -14587,7 +14948,9 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "pal"
+        "color",
+        "magnetar",
+        "theme"
       ],
       "characteristics": [
         "distinctive"
@@ -14696,7 +15059,11 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "detail"
+        "detail",
+        "winter",
+        "christmas",
+        "snow",
+        "cold"
       ],
       "characteristics": [],
       "preferred_moods": [],
@@ -14921,7 +15288,11 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "dec"
+        "detail",
+        "geometric",
+        "pattern",
+        "border",
+        "circles"
       ],
       "characteristics": [
         "distinctive"
@@ -14938,7 +15309,11 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "dec"
+        "detail",
+        "geometric",
+        "pattern",
+        "border",
+        "squares"
       ],
       "characteristics": [
         "distinctive"
@@ -14955,7 +15330,11 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "dec"
+        "detail",
+        "geometric",
+        "pattern",
+        "border",
+        "triangles"
       ],
       "characteristics": [
         "distinctive"
@@ -14972,7 +15351,11 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "dec"
+        "detail",
+        "geometric",
+        "pattern",
+        "border",
+        "polygons"
       ],
       "characteristics": [
         "distinctive"
@@ -14989,7 +15372,11 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "dec"
+        "detail",
+        "geometric",
+        "pattern",
+        "border",
+        "hexagons"
       ],
       "characteristics": [
         "distinctive"
@@ -15006,7 +15393,11 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "dec"
+        "detail",
+        "geometric",
+        "pattern",
+        "border",
+        "octagons"
       ],
       "characteristics": [
         "distinctive"
@@ -15023,7 +15414,11 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "dec"
+        "detail",
+        "geometric",
+        "pattern",
+        "border",
+        "diamonds"
       ],
       "characteristics": [
         "distinctive"
@@ -15040,7 +15435,11 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "dec"
+        "detail",
+        "geometric",
+        "pattern",
+        "border",
+        "crosses"
       ],
       "characteristics": [
         "distinctive"
@@ -15057,7 +15456,11 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "dec"
+        "detail",
+        "geometric",
+        "pattern",
+        "border",
+        "spirals"
       ],
       "characteristics": [
         "distinctive"
@@ -15074,7 +15477,11 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "dec"
+        "detail",
+        "geometric",
+        "pattern",
+        "border",
+        "waves"
       ],
       "characteristics": [
         "distinctive"
@@ -15091,7 +15498,11 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "dec"
+        "detail",
+        "geometric",
+        "pattern",
+        "border",
+        "zigzags"
       ],
       "characteristics": [
         "distinctive"
@@ -15108,7 +15519,11 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "dec"
+        "detail",
+        "geometric",
+        "pattern",
+        "border",
+        "dots"
       ],
       "characteristics": [
         "distinctive"
@@ -15125,7 +15540,11 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "dec"
+        "detail",
+        "geometric",
+        "pattern",
+        "border",
+        "dashes"
       ],
       "characteristics": [
         "distinctive"
@@ -15142,7 +15561,11 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "dec"
+        "detail",
+        "geometric",
+        "pattern",
+        "border",
+        "stripes"
       ],
       "characteristics": [
         "distinctive"
@@ -15159,7 +15582,11 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "dec"
+        "detail",
+        "geometric",
+        "pattern",
+        "border",
+        "plaid"
       ],
       "characteristics": [
         "distinctive"
@@ -15176,7 +15603,11 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "dec"
+        "detail",
+        "geometric",
+        "pattern",
+        "border",
+        "checkerboard"
       ],
       "characteristics": [
         "distinctive"
@@ -15193,7 +15624,11 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "dec"
+        "detail",
+        "geometric",
+        "pattern",
+        "border",
+        "polka dots"
       ],
       "characteristics": [
         "distinctive"
@@ -15210,7 +15645,11 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "dec"
+        "detail",
+        "geometric",
+        "pattern",
+        "border",
+        "chevron"
       ],
       "characteristics": [
         "distinctive"
@@ -15227,7 +15666,11 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "dec"
+        "detail",
+        "geometric",
+        "pattern",
+        "border",
+        "houndstooth"
       ],
       "characteristics": [
         "distinctive"
@@ -15244,7 +15687,11 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "dec"
+        "detail",
+        "geometric",
+        "pattern",
+        "border",
+        "herringbone"
       ],
       "characteristics": [
         "distinctive"
@@ -15443,7 +15890,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "typ"
+        "font",
+        "vintage",
+        "calligraphy",
+        "pixel",
+        "style",
+        "gothic script"
       ],
       "characteristics": [
         "distinctive"
@@ -15460,7 +15912,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "typ"
+        "font",
+        "vintage",
+        "calligraphy",
+        "pixel",
+        "style",
+        "cyberpunk glitch"
       ],
       "characteristics": [
         "distinctive"
@@ -15477,7 +15934,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "typ"
+        "font",
+        "vintage",
+        "calligraphy",
+        "pixel",
+        "style",
+        "vintage letterpress"
       ],
       "characteristics": [
         "distinctive"
@@ -15494,7 +15956,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "typ"
+        "font",
+        "vintage",
+        "calligraphy",
+        "pixel",
+        "style",
+        "art deco display"
       ],
       "characteristics": [
         "distinctive"
@@ -15511,7 +15978,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "typ"
+        "font",
+        "vintage",
+        "calligraphy",
+        "pixel",
+        "style",
+        "victorian ornate"
       ],
       "characteristics": [
         "distinctive"
@@ -15528,7 +16000,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "typ"
+        "font",
+        "vintage",
+        "calligraphy",
+        "pixel",
+        "style",
+        "minimalist geometric"
       ],
       "characteristics": [
         "distinctive"
@@ -15545,7 +16022,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "typ"
+        "font",
+        "vintage",
+        "calligraphy",
+        "pixel",
+        "style",
+        "hand-painted sign"
       ],
       "characteristics": [
         "distinctive"
@@ -15562,7 +16044,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "typ"
+        "font",
+        "vintage",
+        "calligraphy",
+        "pixel",
+        "style",
+        "graffiti tag"
       ],
       "characteristics": [
         "distinctive"
@@ -15579,7 +16066,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "typ"
+        "font",
+        "vintage",
+        "calligraphy",
+        "pixel",
+        "style",
+        "chalkboard lettering"
       ],
       "characteristics": [
         "distinctive"
@@ -15596,7 +16088,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "typ"
+        "font",
+        "vintage",
+        "calligraphy",
+        "pixel",
+        "style",
+        "neon sign"
       ],
       "characteristics": [
         "distinctive"
@@ -15613,7 +16110,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "typ"
+        "font",
+        "vintage",
+        "calligraphy",
+        "pixel",
+        "style",
+        "pixel font"
       ],
       "characteristics": [
         "distinctive"
@@ -15630,7 +16132,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "typ"
+        "font",
+        "vintage",
+        "calligraphy",
+        "pixel",
+        "style",
+        "typewriter ribbon"
       ],
       "characteristics": [
         "distinctive"
@@ -15647,7 +16154,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "typ"
+        "font",
+        "vintage",
+        "calligraphy",
+        "pixel",
+        "style",
+        "calligraphy"
       ],
       "characteristics": [
         "distinctive"
@@ -15664,7 +16176,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "typ"
+        "font",
+        "vintage",
+        "calligraphy",
+        "pixel",
+        "style",
+        "illuminated manuscript"
       ],
       "characteristics": [
         "distinctive"
@@ -15848,7 +16365,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "smooth"
       ],
       "characteristics": [
         "distinctive"
@@ -15865,7 +16387,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "rough"
       ],
       "characteristics": [
         "distinctive"
@@ -15882,7 +16409,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "bumpy"
       ],
       "characteristics": [
         "distinctive"
@@ -15899,7 +16431,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "spiky"
       ],
       "characteristics": [
         "distinctive"
@@ -15916,7 +16453,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "furry"
       ],
       "characteristics": [
         "distinctive"
@@ -15933,7 +16475,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "hairy"
       ],
       "characteristics": [
         "distinctive"
@@ -15950,7 +16497,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "feathery"
       ],
       "characteristics": [
         "distinctive"
@@ -15967,7 +16519,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "scaly"
       ],
       "characteristics": [
         "distinctive"
@@ -15984,7 +16541,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "slimy"
       ],
       "characteristics": [
         "distinctive"
@@ -16001,7 +16563,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "sticky"
       ],
       "characteristics": [
         "distinctive"
@@ -16018,7 +16585,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "wet"
       ],
       "characteristics": [
         "distinctive"
@@ -16035,7 +16607,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "dry"
       ],
       "characteristics": [
         "distinctive"
@@ -16052,7 +16629,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "cracked"
       ],
       "characteristics": [
         "distinctive"
@@ -16069,7 +16651,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "peeling"
       ],
       "characteristics": [
         "distinctive"
@@ -16086,7 +16673,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "flaking"
       ],
       "characteristics": [
         "distinctive"
@@ -16103,7 +16695,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "crumbling"
       ],
       "characteristics": [
         "distinctive"
@@ -16120,7 +16717,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "powdery"
       ],
       "characteristics": [
         "distinctive"
@@ -16137,7 +16739,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "dusty"
       ],
       "characteristics": [
         "distinctive"
@@ -16154,7 +16761,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "sandy"
       ],
       "characteristics": [
         "distinctive"
@@ -16171,7 +16783,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "gritty"
       ],
       "characteristics": [
         "distinctive"
@@ -16188,7 +16805,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "gravelly"
       ],
       "characteristics": [
         "distinctive"
@@ -16205,7 +16827,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "rocky"
       ],
       "characteristics": [
         "distinctive"
@@ -16222,7 +16849,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "stony"
       ],
       "characteristics": [
         "distinctive"
@@ -16239,7 +16871,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "pebbly"
       ],
       "characteristics": [
         "distinctive"
@@ -16256,7 +16893,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "cobbled"
       ],
       "characteristics": [
         "distinctive"
@@ -16273,7 +16915,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "paved"
       ],
       "characteristics": [
         "distinctive"
@@ -16290,7 +16937,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "asphalt"
       ],
       "characteristics": [
         "distinctive"
@@ -16307,7 +16959,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "concrete"
       ],
       "characteristics": [
         "distinctive"
@@ -16324,7 +16981,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "cement"
       ],
       "characteristics": [
         "distinctive"
@@ -16341,7 +17003,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "brick"
       ],
       "characteristics": [
         "distinctive"
@@ -16358,7 +17025,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "tile"
       ],
       "characteristics": [
         "distinctive"
@@ -16375,7 +17047,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "slate"
       ],
       "characteristics": [
         "distinctive"
@@ -16392,7 +17069,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "marble"
       ],
       "characteristics": [
         "distinctive"
@@ -16409,7 +17091,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "granite"
       ],
       "characteristics": [
         "distinctive"
@@ -16426,7 +17113,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "quartz"
       ],
       "characteristics": [
         "distinctive"
@@ -16443,7 +17135,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "glass"
       ],
       "characteristics": [
         "distinctive"
@@ -16460,7 +17157,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "crystal"
       ],
       "characteristics": [
         "distinctive"
@@ -16477,7 +17179,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "gemstone"
       ],
       "characteristics": [
         "distinctive"
@@ -16494,7 +17201,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "diamond"
       ],
       "characteristics": [
         "distinctive"
@@ -16511,7 +17223,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "gold"
       ],
       "characteristics": [
         "distinctive"
@@ -16528,7 +17245,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "silver"
       ],
       "characteristics": [
         "distinctive"
@@ -16545,7 +17267,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "copper"
       ],
       "characteristics": [
         "distinctive"
@@ -16562,7 +17289,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "bronze"
       ],
       "characteristics": [
         "distinctive"
@@ -16579,7 +17311,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "brass"
       ],
       "characteristics": [
         "distinctive"
@@ -16596,7 +17333,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "iron"
       ],
       "characteristics": [
         "distinctive"
@@ -16613,7 +17355,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "steel"
       ],
       "characteristics": [
         "distinctive"
@@ -16630,7 +17377,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "aluminum"
       ],
       "characteristics": [
         "distinctive"
@@ -16647,7 +17399,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "titanium"
       ],
       "characteristics": [
         "distinctive"
@@ -16664,7 +17421,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "plastic"
       ],
       "characteristics": [
         "distinctive"
@@ -16681,7 +17443,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "rubber"
       ],
       "characteristics": [
         "distinctive"
@@ -16698,7 +17465,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "silicone"
       ],
       "characteristics": [
         "distinctive"
@@ -16715,7 +17487,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "latex"
       ],
       "characteristics": [
         "distinctive"
@@ -16732,7 +17509,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "leather"
       ],
       "characteristics": [
         "distinctive"
@@ -16749,7 +17531,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "suede"
       ],
       "characteristics": [
         "distinctive"
@@ -16766,7 +17553,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "velvet"
       ],
       "characteristics": [
         "distinctive"
@@ -16783,7 +17575,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "silk"
       ],
       "characteristics": [
         "distinctive"
@@ -16800,7 +17597,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "satin"
       ],
       "characteristics": [
         "distinctive"
@@ -16817,7 +17619,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "cotton"
       ],
       "characteristics": [
         "distinctive"
@@ -16834,7 +17641,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "wool"
       ],
       "characteristics": [
         "distinctive"
@@ -16851,7 +17663,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "linen"
       ],
       "characteristics": [
         "distinctive"
@@ -16868,7 +17685,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "hemp"
       ],
       "characteristics": [
         "distinctive"
@@ -16885,7 +17707,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "jute"
       ],
       "characteristics": [
         "distinctive"
@@ -16902,7 +17729,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "burlap"
       ],
       "characteristics": [
         "distinctive"
@@ -16919,7 +17751,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "canvas"
       ],
       "characteristics": [
         "distinctive"
@@ -16936,7 +17773,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "denim"
       ],
       "characteristics": [
         "distinctive"
@@ -16953,7 +17795,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "corduroy"
       ],
       "characteristics": [
         "distinctive"
@@ -16970,7 +17817,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "fleece"
       ],
       "characteristics": [
         "distinctive"
@@ -16987,7 +17839,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "felt"
       ],
       "characteristics": [
         "distinctive"
@@ -17004,7 +17861,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "lace"
       ],
       "characteristics": [
         "distinctive"
@@ -17021,7 +17883,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "netting"
       ],
       "characteristics": [
         "distinctive"
@@ -17038,7 +17905,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "mesh"
       ],
       "characteristics": [
         "distinctive"
@@ -17055,7 +17927,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "wire"
       ],
       "characteristics": [
         "distinctive"
@@ -17072,7 +17949,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "chainmail"
       ],
       "characteristics": [
         "distinctive"
@@ -17089,7 +17971,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "armor"
       ],
       "characteristics": [
         "distinctive"
@@ -17106,7 +17993,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "scales"
       ],
       "characteristics": [
         "distinctive"
@@ -17123,7 +18015,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "shell"
       ],
       "characteristics": [
         "distinctive"
@@ -17140,7 +18037,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "bone"
       ],
       "characteristics": [
         "distinctive"
@@ -17157,7 +18059,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "horn"
       ],
       "characteristics": [
         "distinctive"
@@ -17174,7 +18081,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "antler"
       ],
       "characteristics": [
         "distinctive"
@@ -17191,7 +18103,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "ivory"
       ],
       "characteristics": [
         "distinctive"
@@ -17208,7 +18125,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "tooth"
       ],
       "characteristics": [
         "distinctive"
@@ -17225,7 +18147,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "claw"
       ],
       "characteristics": [
         "distinctive"
@@ -17242,7 +18169,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "nail"
       ],
       "characteristics": [
         "distinctive"
@@ -17259,7 +18191,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "hair"
       ],
       "characteristics": [
         "distinctive"
@@ -17276,7 +18213,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "skin"
       ],
       "characteristics": [
         "distinctive"
@@ -17293,7 +18235,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "flesh"
       ],
       "characteristics": [
         "distinctive"
@@ -17310,7 +18257,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "muscle"
       ],
       "characteristics": [
         "distinctive"
@@ -17327,7 +18279,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "vein"
       ],
       "characteristics": [
         "distinctive"
@@ -17344,7 +18301,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "blood"
       ],
       "characteristics": [
         "distinctive"
@@ -17361,7 +18323,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "tear"
       ],
       "characteristics": [
         "distinctive"
@@ -17378,7 +18345,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "sweat"
       ],
       "characteristics": [
         "distinctive"
@@ -17395,7 +18367,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "saliva"
       ],
       "characteristics": [
         "distinctive"
@@ -17412,7 +18389,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "mucus"
       ],
       "characteristics": [
         "distinctive"
@@ -17429,7 +18411,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "pus"
       ],
       "characteristics": [
         "distinctive"
@@ -17446,7 +18433,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "scab"
       ],
       "characteristics": [
         "distinctive"
@@ -17463,7 +18455,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "scar"
       ],
       "characteristics": [
         "distinctive"
@@ -17480,7 +18477,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "wrinkle"
       ],
       "characteristics": [
         "distinctive"
@@ -17497,7 +18499,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "dimple"
       ],
       "characteristics": [
         "distinctive"
@@ -17514,7 +18521,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "freckle"
       ],
       "characteristics": [
         "distinctive"
@@ -17531,7 +18543,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "mole"
       ],
       "characteristics": [
         "distinctive"
@@ -17548,7 +18565,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "wart"
       ],
       "characteristics": [
         "distinctive"
@@ -17565,7 +18587,12 @@
       "subcategory": null,
       "complexity": 2,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "blister"
       ],
       "characteristics": [
         "distinctive"
@@ -17582,7 +18609,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "pimple"
       ],
       "characteristics": [
         "distinctive"
@@ -17599,7 +18631,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "rash"
       ],
       "characteristics": [
         "distinctive"
@@ -17616,7 +18653,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "bruise"
       ],
       "characteristics": [
         "distinctive"
@@ -17633,7 +18675,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "cut"
       ],
       "characteristics": [
         "distinctive"
@@ -17650,7 +18697,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "scrape"
       ],
       "characteristics": [
         "distinctive"
@@ -17667,7 +18719,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "burn"
       ],
       "characteristics": [
         "distinctive"
@@ -17684,7 +18741,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "frostbite"
       ],
       "characteristics": [
         "distinctive"
@@ -17701,7 +18763,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "sunburn"
       ],
       "characteristics": [
         "distinctive"
@@ -17718,7 +18785,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "tan"
       ],
       "characteristics": [
         "distinctive"
@@ -17735,7 +18807,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "pale"
       ],
       "characteristics": [
         "distinctive"
@@ -17752,7 +18829,12 @@
       "subcategory": null,
       "complexity": 1,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "flush"
       ],
       "characteristics": [
         "distinctive"
@@ -17769,7 +18851,12 @@
       "subcategory": null,
       "complexity": 3,
       "tags": [
-        "tex"
+        "surface",
+        "smooth",
+        "organic",
+        "fabric",
+        "metallic",
+        "blush"
       ],
       "characteristics": [
         "distinctive"
