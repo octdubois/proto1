@@ -1,5 +1,104 @@
 [
-  {"source": "occ_halloween", "target": "sub_black_cat", "score": 1.0, "relationship_type": "directional"},
-  {"source": "sty_gothic", "target": "occ_halloween", "score": 0.8, "relationship_type": "directional"},
-  {"source": "occ_halloween", "target": "sty_gothic", "score": 0.95, "relationship_type": "directional"}
+  {
+    "source": "occ_halloween",
+    "target": "sub_black_cat",
+    "score": 1.0,
+    "relationship_type": "directional"
+  },
+  {
+    "source": "sty_gothic",
+    "target": "occ_halloween",
+    "score": 0.8,
+    "relationship_type": "directional"
+  },
+  {
+    "source": "occ_halloween",
+    "target": "sty_gothic",
+    "score": 0.95,
+    "relationship_type": "directional"
+  },
+  {
+    "source": "occ_c52783",
+    "target": "pal_292614",
+    "score": 1.0,
+    "relationship_type": "directional"
+  },
+  {
+    "source": "occ_c52783",
+    "target": "dec_f43c97",
+    "score": 0.95,
+    "relationship_type": "directional"
+  },
+  {
+    "source": "occ_c52783",
+    "target": "sub_52c845",
+    "score": 0.9,
+    "relationship_type": "directional"
+  },
+  {
+    "source": "occ_c52783",
+    "target": "sub_e7b7cb",
+    "score": 1.0,
+    "relationship_type": "directional"
+  },
+  {
+    "source": "occ_c52783",
+    "target": "sub_0ae325",
+    "score": 0.95,
+    "relationship_type": "directional"
+  },
+  {
+    "source": "occ_c52783",
+    "target": "sub_8ca4f5",
+    "score": 0.95,
+    "relationship_type": "directional"
+  },
+  {
+    "source": "occ_c52783",
+    "target": "thm_af5e18",
+    "score": 0.95,
+    "relationship_type": "directional"
+  },
+  {
+    "source": "occ_c52783",
+    "target": "env_3e0f2c",
+    "score": 0.0,
+    "relationship_type": "symmetric"
+  },
+  {
+    "source": "occ_c52783",
+    "target": "env_a10b44",
+    "score": 0.0,
+    "relationship_type": "symmetric"
+  },
+  {
+    "source": "occ_c52783",
+    "target": "env_b49627",
+    "score": 0.0,
+    "relationship_type": "symmetric"
+  },
+  {
+    "source": "occ_c52783",
+    "target": "env_41e80e",
+    "score": 0.0,
+    "relationship_type": "symmetric"
+  },
+  {
+    "source": "occ_c52783",
+    "target": "env_accdff",
+    "score": 0.0,
+    "relationship_type": "symmetric"
+  },
+  {
+    "source": "occ_c52783",
+    "target": "thm_e248e6",
+    "score": 0.0,
+    "relationship_type": "symmetric"
+  },
+  {
+    "source": "occ_32f338",
+    "target": "pal_0ce6cd",
+    "score": 0.0,
+    "relationship_type": "symmetric"
+  }
 ]
