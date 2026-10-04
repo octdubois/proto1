@@ -171,6 +171,16 @@ class MainWindow(QMainWindow):
 
         self.tabs.addTab(json_tab, "JSON Output")
 
+        # Debug Trace Tab
+        trace_tab = QWidget()
+        trace_layout = QVBoxLayout(trace_tab)
+
+        self.trace_viewer = QTextEdit()
+        self.trace_viewer.setReadOnly(True)
+        self.trace_viewer.setStyleSheet("font-family: monospace; background-color: #2b2b2b; color: #a9b7c6;")
+        trace_layout.addWidget(self.trace_viewer)
+        self.tabs.addTab(trace_tab, "Debug Trace")
+
         # History Tab
         hist_tab = QWidget()
         hist_layout = QVBoxLayout(hist_tab)
@@ -230,6 +240,12 @@ class MainWindow(QMainWindow):
         # Output and Log
         filename = self.storage.save_dna(dna)
         self.storage.log_creation(dna, filename)
+
+
+        if dna.validation and dna.validation.debug_trace:
+            self.trace_viewer.setPlainText(json.dumps(dna.validation.debug_trace, indent=2))
+        else:
+            self.trace_viewer.setPlainText("No debug trace available for this generation.")
 
         # Update novelties memory
         self.novelty.add_to_history({

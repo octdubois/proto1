@@ -181,14 +181,34 @@ class CompatibilityEngine:
         total_score = 0.0
         pairs = 0
         trace = {}
+        neutral_count = 0
         for i in range(len(valid_ids)):
             for j in range(i + 1, len(valid_ids)):
                 score, reason = self.get_score_with_reason(valid_ids[i], valid_ids[j], ground_truth)
-                trace[f"{valid_ids[i]} <-> {valid_ids[j]}"] = reason
+
+                # Make IDs human readable if ground truth is available
+                if ground_truth:
+                    ent_i = ground_truth.get_entity_by_id(valid_ids[i])
+                    ent_j = ground_truth.get_entity_by_id(valid_ids[j])
+                    name_i = ent_i.name if ent_i else valid_ids[i]
+                    name_j = ent_j.name if ent_j else valid_ids[j]
+                    trace_key = f"{name_i} <-> {name_j}"
+                else:
+                    trace_key = f"{valid_ids[i]} <-> {valid_ids[j]}"
+
+                if score > 0.05 or score == 0.0:
+                    trace[trace_key] = f"[{score}] {reason}"
+                else:
+                    neutral_count += 1
+
                 if score == 0.0:
+                    trace["HARD_INCOMPATIBILITY_DETECTED"] = trace_key
                     return 0.0, trace
                 total_score += score
                 pairs += 1
+
+        if neutral_count > 0:
+            trace["_summary"] = f"{neutral_count} relationships evaluated to Neutral (0.05) and were hidden for brevity."
 
         return total_score / pairs if pairs > 0 else 1.0, trace
 
